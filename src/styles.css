@@ -1,0 +1,113 @@
+/* ===== Global Styles ===== */
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    /* Playful and casual font */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    /* Gradient background */
+    color: #444;
+    /* Darker text for better readability */
+}
+
+/* ===== Navigation ===== */
+nav {
+    background: linear-gradient(90deg, #ff6f61, #de6ef7);
+    /* Vibrant gradient */
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    /* Sticky menu */
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.2);
+    /* Fun zoom effect */
+}
+
+/* ===== Container ===== */
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.85);
+    /* Semi-transparent white */
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    /* Glassmorphism effect */
+}
+
+/* ===== Titles ===== */
+h1 {
+    font-size: 36px;
+    color: #ff6f61;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    /* Cool shadow effect */
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* ===== Buttons ===== */
+button,
+a {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(90deg, #ff6f61, #de6ef7);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover,
+a:hover {
+    transform: translateY(-3px);
+    /* Lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    /* Enhanced shadow */
+}
+
+/* ===== Responsiveness ===== */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    button,
+    a {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
